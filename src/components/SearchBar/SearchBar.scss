@@ -1,0 +1,51 @@
+.search-bar{
+    font-size: 13px;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 14px;
+    width: 600px;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+
+    &:hover{
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+      border-color: rgba(223,225,229,0);
+    }
+
+    &:focus-within{
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+      border-color: rgba(223,225,229,0);
+    }
+
+    svg{
+      vertical-align: middle;
+
+      &:first-child{
+        float: left;
+        margin-right: 5px;
+      }
+
+      &:last-child{
+        float: right;
+        cursor: pointer;
+      }
+
+      &.disabled{
+        display: none;
+      }
+    }
+
+    input{
+      text-align: left;
+      width: 85%;
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+    }
+}
+
+

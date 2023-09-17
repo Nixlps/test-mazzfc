@@ -1,10 +1,12 @@
 import React from 'react';
-import '../public/reset.scss';
+import { Outlet } from 'react-router-dom';
+
+
 
 function App() {
   return(
     <>
-      <h1>Hello World</h1>
+      <Outlet />
     </>
   )
 }
