@@ -11,4 +11,9 @@
         border: 1.5px solid lightslategray;
         color: black;
     }
+
+    &:disabled{
+        opacity: 0.2;
+        cursor: auto;
+    }
 }

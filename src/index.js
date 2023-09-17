@@ -7,22 +7,24 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import '../public/reset.scss';
 import '../public/common.scss';
 
-import Homepage from './pages/Homepage/Homepage';
+import HomePage from './pages/HomePage/HomePage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import ResultPage from './pages/ResultPage/ResultPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
-        element: <Homepage />,
+        path: '/',
+        element: <HomePage />,
       },
-      // {
-      //   path: "campanhas",
-      //   element: <Campaings />,
-      // },
+      {
+        path: 'search',
+        element: <ResultPage />
+      }
     ]
   },
 ]);
