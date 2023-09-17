@@ -22,5 +22,5 @@ vanilla js, but don’t forget that the goal is to show us your competences.
 
 - start the project and open local web server typing npm start
 
-- build the project for production typing npm build. The dist folder contains all files necessary to go live
+- build the project for production typing npm run build. The dist folder contains all files necessary to go live
 
